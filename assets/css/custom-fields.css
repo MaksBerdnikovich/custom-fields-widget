@@ -1,0 +1,197 @@
+.thegem-te-custom-fields{
+	position: relative;
+	width: 100%;
+}
+.thegem-te-custom-fields .custom-fields{
+	position: relative;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.thegem-te-custom-fields.custom-fields--left .custom-fields{
+	justify-content: flex-start;
+}
+.thegem-te-custom-fields.custom-fields--center .custom-fields{
+	justify-content: center;
+}
+.thegem-te-custom-fields.custom-fields--right .custom-fields{
+	justify-content: flex-end;
+}
+.thegem-te-custom-fields.custom-fields--justify .custom-fields{
+	justify-content: space-between;
+}
+.thegem-te-custom-fields.custom-fields--vertical .custom-fields{
+	flex-direction: column;
+}
+.thegem-te-custom-fields.custom-fields--vertical.custom-fields--left .custom-fields{
+	align-items: flex-start;
+}
+.thegem-te-custom-fields.custom-fields--vertical.custom-fields--center .custom-fields{
+	align-items: center;
+}
+.thegem-te-custom-fields.custom-fields--vertical.custom-fields--right .custom-fields{
+	align-items: flex-end;
+}
+.thegem-te-custom-fields.custom-fields--vertical .custom-fields-item{
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+	margin-top: 10px;
+	margin-bottom: 0;
+}
+.thegem-te-custom-fields.custom-fields--vertical .custom-fields-item:first-child{
+	margin-top: 5px !important;
+}
+.thegem-te-custom-fields.custom-fields--vertical .custom-fields-item:last-child{
+	margin-bottom: 0 !important;
+}
+.thegem-te-custom-fields.custom-fields--divider-hide .custom-fields-item:after,
+.thegem-te-custom-fields.custom-fields--colon-hide .custom-fields-item .item-label .colon{
+	display: none;
+}
+.thegem-te-custom-fields .custom-fields-item{
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.thegem-te-custom-fields .custom-fields-item:last-child{
+	padding-right: 0 !important;
+	margin-right: 0 !important;
+}
+.thegem-te-custom-fields .custom-fields-item .icon{
+	margin-right: 5px;
+	display: inline-flex;
+	align-items: center;
+	font-style: normal;
+	font-weight: normal;
+}
+.thegem-te-custom-fields .custom-fields-item .icon i{
+	font-style: normal;
+	font-weight: normal;
+}
+.thegem-te-custom-fields .custom-fields-item .label-before{
+	margin-right: 5px;
+}
+.thegem-te-custom-fields .custom-fields-item .label-after{
+	margin-left: 5px;
+}
+.thegem-te-custom-fields.custom-fields--text-vertical .custom-fields-item{
+	flex-direction: column;
+	align-items: flex-start;
+}
+.thegem-te-custom-fields.custom-fields--center.custom-fields--text-vertical .custom-fields-item{
+	align-items: center;
+	text-align: center;
+}
+.thegem-te-custom-fields.custom-fields--right.custom-fields--text-vertical .custom-fields-item{
+	align-items: flex-end;
+	text-align: right;
+}
+.thegem-te-custom-fields .custom-fields-item .item-label{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.thegem-te-custom-fields .custom-fields-item .item-label,
+.thegem-te-custom-fields .custom-fields-item .item-value{
+	padding: 0;
+	margin: 0;
+}
+.thegem-te-custom-fields .custom-fields{
+	font-family: var(--thegem-to-h6-font-family);
+	font-style: var(--thegem-to-h6-font-style);
+	font-weight: var(--thegem-to-h6-font-weight);
+	font-size: var(--thegem-to-h6-font-size-small);
+	line-height: var(--thegem-to-h6-line-height-small);
+	text-transform: none;
+	letter-spacing: 0;
+	color: var(--thegem-to-h6-color);
+}
+.thegem-te-custom-fields .custom-fields .item-label.light,
+.thegem-te-custom-fields .custom-fields .item-value.light{
+	font-family: var(--thegem-to-light-title-font-family);
+	font-style: var(--thegem-to-light-title-font-style);
+	font-weight: var(--thegem-to-light-title-font-weight);
+}
+.thegem-te-custom-fields .custom-fields-item i{
+	font-size: 24px;
+	line-height: 24px;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields{
+	display: table;
+	width: 100%;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item{
+	display: table-row;
+	margin: 0;
+	padding: 0;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item:not(:last-child):after{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 1px;
+	height: 20px;
+	background-color: var(--thegem-to-box-border-color, #D4DEE1);
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item .item-label,
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item .item-value{
+	display: table-cell;
+	vertical-align: middle;
+	padding-top: 16px;
+	padding-bottom: 16px;
+	margin: 0;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item .item-label{
+	white-space: nowrap;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item .item-label > div{
+	display: inline-block;
+	vertical-align: top;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item .item-value{
+	width: 100%;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item .item-value iframe{
+	width: 100%;
+}
+.thegem-te-custom-fields.custom-fields--table.custom-fields--center .custom-fields-item .item-label,
+.thegem-te-custom-fields.custom-fields--table.custom-fields--center .custom-fields-item .item-value{
+	text-align: center;
+	justify-content: center;
+}
+.thegem-te-custom-fields.custom-fields--table.custom-fields--right .custom-fields-item .item-label,
+.thegem-te-custom-fields.custom-fields--table.custom-fields--right .custom-fields-item .item-value{
+	text-align: right;
+	justify-content: flex-end;
+}
+.thegem-te-custom-fields.custom-fields--table.custom-fields--justify .custom-fields-item .item-label,
+.thegem-te-custom-fields.custom-fields--table.custom-fields--justify .custom-fields-item .item-value{
+	text-align: justify;
+	justify-content: space-between;
+}
+.thegem-te-custom-fields.custom-fields--table.custom-fields--justify .custom-fields-item .item-value{
+	text-align: right;
+}
+.thegem-te-custom-fields.custom-fields--table.custom-fields--text-vertical .custom-fields-item .item-label > *,
+.thegem-te-custom-fields.custom-fields--table.custom-fields--text-vertical .custom-fields-item .item-value > *{
+	display: block;
+}
+.thegem-te-custom-fields.custom-fields--table .custom-fields-item:not(:last-child):after{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	top: auto;
+	transform: none;
+	width: 100%;
+	height: 1px;
+	background-color: var(--thegem-to-box-border-color, #D4DEE1);
+	visibility: visible;
+	opacity: 1;
+}
